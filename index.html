@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdadero o Falso: Lo que creías sobre la fiebre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="start-screen" class="screen">
+    <h1>Verdadero o Falso:<br/>Lo que creías sobre la fiebre</h1>
+    <img src="images/bunny.png" alt="Conejito enfermo kawaii" class="intro-img" />
+    <p>¡Pon a prueba tus conocimientos sobre la fiebre! Presiona el botón para comenzar.</p>
+    <button id="start-btn">Comenzar juego</button>
+  </section>
+
+  <section id="quiz-screen" class="screen" style="display:none;">
+    <div id="question-container">
+      <h2 id="question-text"></h2>
+      <div id="buttons">
+        <button id="true-btn" class="answer-btn">Verdadero</button>
+        <button id="false-btn" class="answer-btn">Falso</button>
+      </div>
+      <div id="feedback" style="display:none;"></div>
+      <button id="next-btn" style="display:none;">Siguiente</button>
+    </div>
+  </section>
+
+  <section id="end-screen" class="screen" style="display:none;">
+    <h2>¡Juego completado!</h2>
+    <p id="score-text"></p>
+    <p>¡Felicitaciones, has aprendido más sobre la fiebre!</p>
+    <button id="restart-btn">Volver a jugar</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
